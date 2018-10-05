@@ -2,5 +2,6 @@
     <string name="app_name">JINI</string>
     <string name="manage_contacts">Manage Trusted Contacts</string>
     <string name="help_needed">Help Needed</string>
+    <string name="night_mode">Click here to enable night mode</string>
     <string name="press_red_button">Press the RED Alert button four times continuously in times of DANGER</string>
 </resources>

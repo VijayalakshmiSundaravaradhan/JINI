@@ -16,6 +16,7 @@ import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     protected PowerManager.WakeLock mWakeLock;
     ImageButton mHelpButton;
+    Button mTrustedContactsButton;
+    Button mNightModeButton;
+
 //    MediaSessionCompat mediaSessionCompat;
 
     @SuppressLint("ClickableViewAccessibility")
@@ -37,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         this.mWakeLock.acquire();
 
         mHelpButton = findViewById(R.id.help_button);
+        mTrustedContactsButton = findViewById(R.id.trusted_contacts_button);
+        mNightModeButton = findViewById(R.id.night_mode_button);
 
         mHelpButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
